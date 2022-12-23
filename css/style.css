@@ -1,0 +1,3023 @@
+@charset 'UTF-8';
+/* Ресет */
+/* My resets */
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+button
+{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+input
+{
+    outline: none;
+}
+
+/* Eric Meyer's CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video
+{
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    display: block;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    line-height: 1;
+}
+
+ol,
+ul
+{
+    list-style: none;
+}
+
+blockquote,
+q
+{
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+    content: none;
+}
+
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+input
+{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Шрифты */
+@font-face
+{
+    font-family: 'DIN Condensed';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('../fonts/DINCondensed-Light.eot');
+    src: local('DIN Condensed Light'), local('DINCondensed-Light'), url('../fonts/DINCondensed-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/DINCondensed-Light.woff2') format('woff2'), url('../fonts/DINCondensed-Light.woff') format('woff'), url('../fonts/DINCondensed-Light.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'DIN Condensed';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/DINCondensed-Regular.eot');
+    src: local('DIN Condensed'), local('DINCondensed-Regular'), url('../fonts/DINCondensed-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/DINCondensed-Regular.woff2') format('woff2'), url('../fonts/DINCondensed-Regular.woff') format('woff'), url('../fonts/DINCondensed-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'GothamPro';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('GothamPro Regular'), local('GothamPro-Regular'), url('../fonts/GothamPro.woff2') format('woff2');
+}
+@font-face
+{
+    font-family: 'GothamPro';
+    font-weight: 300;
+    font-style: normal;
+
+    src: local('GothamPro Light'), local('GothamPro-Light'), url('../fonts/GothamPro-Light.woff2') format('woff2');
+}
+@font-face
+{
+    font-family: 'GothamPro';
+    font-weight: 500;
+    font-style: normal;
+
+    src: local('GothamPro Medium'), local('GothamPro-Medium'), url('../fonts/GothamPro-Medium.woff2') format('woff2');
+}
+@font-face
+{
+    font-family: 'GothamPro';
+    font-weight: 600;
+    font-style: normal;
+
+    src: local('GothamPro Bold'), local('GothamPro-Bold'), url('../fonts/GothamPro-Bold.woff2') format('woff2');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn UltLt';
+    font-weight: 300;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnUltLtIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Ultra Light Italic'), local('FrutigerNeueLTW1G-CnUltLtIt'), url('../fonts/FrutigerNeueLTW1G-CnUltLtIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnUltLtIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnUltLtIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnUltLtIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnBlk.eot');
+    src: local('Frutiger Neue LT W1G Condensed Black'), local('FrutigerNeueLTW1G-CnBlk'), url('../fonts/FrutigerNeueLTW1G-CnBlk.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnBlk.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnBlk.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnBlk.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 900;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-BlackIt.eot');
+    src: local('Frutiger Neue LT W1G Black Italic'), local('FrutigerNeueLTW1G-BlackIt'), url('../fonts/FrutigerNeueLTW1G-BlackIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-BlackIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-BlackIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-BlackIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 900;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Heavy.eot');
+    src: local('Frutiger Neue LT W1G Heavy'), local('FrutigerNeueLTW1G-Heavy'), url('../fonts/FrutigerNeueLTW1G-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Heavy.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Heavy.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Heavy.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 900;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-HeavyIt.eot');
+    src: local('Frutiger Neue LT W1G Heavy Italic'), local('FrutigerNeueLTW1G-HeavyIt'), url('../fonts/FrutigerNeueLTW1G-HeavyIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-HeavyIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-HeavyIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-HeavyIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn UltLt';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnUltLt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Ultra Light'), local('FrutigerNeueLTW1G-CnUltLt'), url('../fonts/FrutigerNeueLTW1G-CnUltLt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnUltLt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnUltLt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnUltLt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: normal;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Italic.eot');
+    src: local('Frutiger Neue LT W1G Italic'), local('FrutigerNeueLTW1G-Italic'), url('../fonts/FrutigerNeueLTW1G-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Italic.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Italic.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Italic.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnMd.eot');
+    src: local('Frutiger Neue LT W1G Condensed Medium'), local('FrutigerNeueLTW1G-CnMd'), url('../fonts/FrutigerNeueLTW1G-CnMd.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnMd.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnMd.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnMd.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Light.eot');
+    src: local('Frutiger Neue LT W1G Light'), local('FrutigerNeueLTW1G-Light'), url('../fonts/FrutigerNeueLTW1G-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Light.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Light.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Light.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 100;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-ThinIt.eot');
+    src: local('Frutiger Neue LT W1G Thin Italic'), local('FrutigerNeueLTW1G-ThinIt'), url('../fonts/FrutigerNeueLTW1G-ThinIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-ThinIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-ThinIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-ThinIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn Book';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnBold.eot');
+    src: local('Frutiger Neue LT W1G Condensed Bold'), local('FrutigerNeueLTW1G-CnBold'), url('../fonts/FrutigerNeueLTW1G-CnBold.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnBold.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnBold.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnBold.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Book';
+    font-weight: bold;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-BoldIt.eot');
+    src: local('Frutiger Neue LT W1G Bold Italic'), local('FrutigerNeueLTW1G-BoldIt'), url('../fonts/FrutigerNeueLTW1G-BoldIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-BoldIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-BoldIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-BoldIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn XBlack';
+    font-weight: 900;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnXBlkIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Extra Black Italic'), local('FrutigerNeueLTW1G-CnXBlkIt'), url('../fonts/FrutigerNeueLTW1G-CnXBlkIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnXBlkIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnXBlkIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnXBlkIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G XBlack';
+    font-weight: 900;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-XBlack.eot');
+    src: local('Frutiger Neue LT W1G Extra Black'), local('FrutigerNeueLTW1G-XBlack'), url('../fonts/FrutigerNeueLTW1G-XBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-XBlack.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-XBlack.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-XBlack.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnLt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Light'), local('FrutigerNeueLTW1G-CnLt'), url('../fonts/FrutigerNeueLTW1G-CnLt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnLt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnLt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnLt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Book';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Book.eot');
+    src: local('Frutiger Neue LT W1G Book'), local('FrutigerNeueLTW1G-Book'), url('../fonts/FrutigerNeueLTW1G-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Book.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Book.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Book.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 500;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-MediumIt.eot');
+    src: local('Frutiger Neue LT W1G Medium Italic'), local('FrutigerNeueLTW1G-MediumIt'), url('../fonts/FrutigerNeueLTW1G-MediumIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-MediumIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-MediumIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-MediumIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: 100;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnThin.eot');
+    src: local('Frutiger Neue LT W1G Condensed Thin'), local('FrutigerNeueLTW1G-CnThin'), url('../fonts/FrutigerNeueLTW1G-CnThin.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnThin.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnThin.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnThin.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Book';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Bold.eot');
+    src: local('Frutiger Neue LT W1G Bold'), local('FrutigerNeueLTW1G-Bold'), url('../fonts/FrutigerNeueLTW1G-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Bold.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Bold.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Bold.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: 500;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnMdIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Medium Italic'), local('FrutigerNeueLTW1G-CnMdIt'), url('../fonts/FrutigerNeueLTW1G-CnMdIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnMdIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnMdIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnMdIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G XBlack';
+    font-weight: 900;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-XBlackIt.eot');
+    src: local('Frutiger Neue LT W1G Extra Black Italic'), local('FrutigerNeueLTW1G-XBlackIt'), url('../fonts/FrutigerNeueLTW1G-XBlackIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-XBlackIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-XBlackIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-XBlackIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn XBlack';
+    font-weight: 900;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnXBlk.eot');
+    src: local('Frutiger Neue LT W1G Condensed Extra Black'), local('FrutigerNeueLTW1G-CnXBlk'), url('../fonts/FrutigerNeueLTW1G-CnXBlk.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnXBlk.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnXBlk.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnXBlk.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Regular.eot');
+    src: local('Frutiger Neue LT W1G Regular'), local('FrutigerNeueLTW1G-Regular'), url('../fonts/FrutigerNeueLTW1G-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Regular.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Regular.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: 100;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnThinIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Thin Italic'), local('FrutigerNeueLTW1G-CnThinIt'), url('../fonts/FrutigerNeueLTW1G-CnThinIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnThinIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnThinIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnThinIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn Book';
+    font-weight: normal;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnBookIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Book Italic'), local('FrutigerNeueLTW1G-CnBookIt'), url('../fonts/FrutigerNeueLTW1G-CnBookIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnBookIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnBookIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnBookIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: bold;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnBlkIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Black Italic'), local('FrutigerNeueLTW1G-CnBlkIt'), url('../fonts/FrutigerNeueLTW1G-CnBlkIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnBlkIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnBlkIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnBlkIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Medium.eot');
+    src: local('Frutiger Neue LT W1G Medium'), local('FrutigerNeueLTW1G-Medium'), url('../fonts/FrutigerNeueLTW1G-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Medium.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Medium.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Medium.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: normal;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnItalic.eot');
+    src: local('Frutiger Neue LT W1G Condensed Italic'), local('FrutigerNeueLTW1G-CnItalic'), url('../fonts/FrutigerNeueLTW1G-CnItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnItalic.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnItalic.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnItalic.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn Book';
+    font-weight: bold;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnBoldIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Bold Italic'), local('FrutigerNeueLTW1G-CnBoldIt'), url('../fonts/FrutigerNeueLTW1G-CnBoldIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnBoldIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnBoldIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnBoldIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 100;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Thin.eot');
+    src: local('Frutiger Neue LT W1G Thin'), local('FrutigerNeueLTW1G-Thin'), url('../fonts/FrutigerNeueLTW1G-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Thin.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Thin.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Thin.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Book';
+    font-weight: normal;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-BookIt.eot');
+    src: local('Frutiger Neue LT W1G Book Italic'), local('FrutigerNeueLTW1G-BookIt'), url('../fonts/FrutigerNeueLTW1G-BookIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-BookIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-BookIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-BookIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn Book';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnBook.eot');
+    src: local('Frutiger Neue LT W1G Condensed Book'), local('FrutigerNeueLTW1G-CnBook'), url('../fonts/FrutigerNeueLTW1G-CnBook.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnBook.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnBook.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnBook.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G UltLt';
+    font-weight: 300;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-UltLtIt.eot');
+    src: local('Frutiger Neue LT W1G Ultra Light Italic'), local('FrutigerNeueLTW1G-UltLtIt'), url('../fonts/FrutigerNeueLTW1G-UltLtIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-UltLtIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-UltLtIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-UltLtIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 900;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-Black.eot');
+    src: local('Frutiger Neue LT W1G Black'), local('FrutigerNeueLTW1G-Black'), url('../fonts/FrutigerNeueLTW1G-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-Black.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-Black.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-Black.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 300;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-LightIt.eot');
+    src: local('Frutiger Neue LT W1G Light Italic'), local('FrutigerNeueLTW1G-LightIt'), url('../fonts/FrutigerNeueLTW1G-LightIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-LightIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-LightIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-LightIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: 300;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnLtIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Light Italic'), local('FrutigerNeueLTW1G-CnLtIt'), url('../fonts/FrutigerNeueLTW1G-CnLtIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnLtIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnLtIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnLtIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnHv.eot');
+    src: local('Frutiger Neue LT W1G Condensed Heavy'), local('FrutigerNeueLTW1G-CnHv'), url('../fonts/FrutigerNeueLTW1G-CnHv.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnHv.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnHv.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnHv.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G UltLt';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-UltLt.eot');
+    src: local('Frutiger Neue LT W1G Ultra Light'), local('FrutigerNeueLTW1G-UltLt'), url('../fonts/FrutigerNeueLTW1G-UltLt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-UltLt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-UltLt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-UltLt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: bold;
+    font-style: italic;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnHvIt.eot');
+    src: local('Frutiger Neue LT W1G Condensed Heavy Italic'), local('FrutigerNeueLTW1G-CnHvIt'), url('../fonts/FrutigerNeueLTW1G-CnHvIt.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnHvIt.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnHvIt.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnHvIt.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/FrutigerNeueLTW1G-CnRg.eot');
+    src: local('Frutiger Neue LT W1G Condensed Regular'), local('FrutigerNeueLTW1G-CnRg'), url('../fonts/FrutigerNeueLTW1G-CnRg.eot?#iefix') format('embedded-opentype'), url('../fonts/FrutigerNeueLTW1G-CnRg.woff2') format('woff2'), url('../fonts/FrutigerNeueLTW1G-CnRg.woff') format('woff'), url('../fonts/FrutigerNeueLTW1G-CnRg.ttf') format('truetype');
+}
+/* Библеотеки */
+/* Глобальное */
+body
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    min-height: 100%;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+main
+{
+    min-height: 46.4vh;
+}
+
+.container
+{
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title
+{
+    font-family: 'DIN Condensed';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+
+    letter-spacing: .045em;
+
+    color: black;
+}
+
+*
+{
+    font-family: 'GothamPro';
+}
+
+a
+{
+    color: black;
+}
+
+.social *
+{
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.social:hover *
+{
+    fill: #cc2929;
+}
+
+.swiper-button-next,
+.swiper-button-prev
+{
+    position: unset;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after
+{
+    display: none;
+
+    content: '';
+}
+
+input[type=checkbox],
+input[type=radio]
+{
+    display: none;
+
+    width: auto !important;
+}
+
+input[type=checkbox]:checked + .checkbox > .checkbox-check
+{
+    display: block;
+}
+
+.checkbox
+{
+    position: relative;
+
+    cursor: pointer;
+}
+.checkbox-check
+{
+    position: absolute;
+    top: 0;
+    right: -3px;
+
+    display: none;
+}
+
+.radioCheck:checked + .checkbox > .checkbox-check
+{
+    display: block;
+}
+
+input
+{
+    font-family: 'Roboto';
+    font-size: 19px;
+    line-height: 22px;
+
+    width: 100%;
+    padding: 14px 13px;
+
+    color: #9d9d9d;
+    border: none;
+    border-bottom: .958712px solid #cecece;
+    outline: none;
+}
+input::-webkit-input-placeholder
+{
+    font-size: 19px;
+
+    color: #9d9d9d;
+}
+input::-moz-placeholder
+{
+    font-size: 19px;
+
+    color: #9d9d9d;
+}
+input:-ms-input-placeholder
+{
+    font-size: 19px;
+
+    color: #9d9d9d;
+}
+input::-ms-input-placeholder
+{
+    font-size: 19px;
+
+    color: #9d9d9d;
+}
+input::placeholder
+{
+    font-size: 19px;
+
+    color: #9d9d9d;
+}
+
+input[type=radio]:checked + .radio .radio__check
+{
+    display: block;
+}
+
+.radio
+{
+    position: relative;
+
+    cursor: pointer;
+}
+.radio__notCheck
+{
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    background: #efefef;
+}
+.radio__check
+{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+
+    display: none;
+
+    width: 19px;
+    height: 19px;
+
+    border-radius: 50%;
+    background: #cc2929;
+}
+.radio__text
+{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 300;
+
+    margin-left: 18px;
+}
+.radioLabel
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* UI компоненты */
+/* Модальное окно */
+.modal
+{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: .7s ease all;
+         -o-transition: .7s ease all;
+            transition: .7s ease all;
+    -webkit-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+            transform: translateY(-100vh);
+    pointer-events: none;
+
+    opacity: 0;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.modal__inner
+{
+    min-width: 300px;
+    max-width: none;
+    min-height: 50px;
+    max-height: none;
+    padding: 10px;
+
+    -webkit-transition: .3s all;
+         -o-transition: .3s all;
+            transition: .3s all;
+    pointer-events: none;
+
+    border-radius: 10px;
+    background: white;
+}
+.modal__background
+{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: .5s all;
+         -o-transition: .5s all;
+            transition: .5s all;
+    pointer-events: none;
+
+    opacity: 0;
+    background: rgba(0, 0, 0, .5);
+}
+.modal__background.active
+{
+    pointer-events: all;
+
+    opacity: 1;
+}
+.modal.active
+{
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    pointer-events: all;
+
+    opacity: 1;
+}
+.modal.active .modal__inner
+{
+    pointer-events: all;
+}
+
+/* Кнопка */
+.button
+{
+    font-family: 'DIN Condensed';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+
+    cursor: pointer;
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    letter-spacing: .045em;
+
+    color: white;
+    border-radius: 11px;
+    background: #cc2929;
+}
+.button:hover
+{
+    background: #681414;
+}
+
+/* Input */
+.input
+{
+    font-size: 13px;
+    line-height: 15px;
+
+    padding: 11px 26px;
+
+    color: #828282;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+.input::-webkit-input-placeholder
+{
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #828282;
+}
+.input::-moz-placeholder
+{
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #828282;
+}
+.input:-ms-input-placeholder
+{
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #828282;
+}
+.input::-ms-input-placeholder
+{
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #828282;
+}
+.input::placeholder
+{
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #828282;
+}
+
+/* Анимации */
+@-webkit-keyframes jump
+{
+    from
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    25%
+    {
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    75%
+    {
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
+    }
+    to
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@keyframes jump
+{
+    from
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    25%
+    {
+        -webkit-transform: translateY(-5px);
+                transform: translateY(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    75%
+    {
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
+    }
+    to
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+/* Хедер */
+.header
+{
+    margin-top: 23px;
+}
+.header__top
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 22px 33px 21px 38px;
+
+    border-radius: 5px;
+    background: #f9f9f9;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.header__top-left
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__top-left *
+{
+    font-size: 13px;
+    line-height: 15px;
+
+    color: black;
+}
+.header__top-left *:not(:last-child)
+{
+    margin-left: 3px;
+}
+.header__top-text.red
+{
+    color: #cc2929;
+}
+.header__top-select
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__top-arrow
+{
+    margin-left: 5px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.header__top-arrow.active
+{
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.header__top-nav
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__top-nav *:not(:last-child)
+{
+    margin-right: 34px;
+}
+.header__top-link
+{
+    font-size: 12px;
+    line-height: 14px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    color: #838383;
+}
+.header__top-link:hover
+{
+    color: black;
+}
+.header__top-right
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__top-right *:not(:last-child)
+{
+    margin-right: 38px;
+}
+.header__top-line
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    cursor: pointer;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__top-line:hover svg
+{
+    -webkit-animation: jump .5s ease;
+            animation: jump .5s ease;
+}
+.header__top-line:hover img
+{
+    -webkit-animation: jump .5s ease;
+            animation: jump .5s ease;
+}
+.header__top-line *:first-child
+{
+    margin-right: 7px;
+}
+.header__top-line--text
+{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+
+    color: black;
+}
+.header__top-line--text.green
+{
+    color: #54ad4a;
+}
+.header__middle
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 21px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.header__middle-center
+{
+    width: 55%;
+}
+.header__middle-right
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__middle-right:hover .header__middle-text
+{
+    color: #cc2929;
+}
+.header__middle-cart
+{
+    position: relative;
+}
+.header__middle-cart--text
+{
+    font-family: 'Frutiger Neue LT W1G Cn';
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+
+    position: absolute;
+    right: -9px;
+    bottom: -3px;
+
+    padding: 2px 6px;
+
+    color: white;
+    border-radius: 50%;
+    background: #cc2929;
+}
+.header__middle-text
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+
+    margin-left: 20px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    color: black;
+}
+.header__search
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__search-input
+{
+    width: 100%;
+
+    border: none;
+}
+.header__search-button
+{
+    font-weight: 700;
+
+    position: absolute;
+    right: 0;
+
+    padding: 11px 65px;
+
+    border-radius: 8px;
+}
+.header__bottom
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 20px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__bottom-button
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    padding: 13px 67px;
+}
+.header__bottom-list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-left: 49px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__bottom-item:not(:last-of-type)
+{
+    margin-right: 43px;
+}
+.header__bottom-link
+{
+    font-size: 12px;
+    line-height: 14px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    color: #404040;
+}
+.header__bottom-link:hover
+{
+    color: black;
+}
+.header__select
+{
+    position: absolute;
+    z-index: 5;
+    top: 39px;
+    left: -38px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: auto;
+        flex-direction: column;
+
+    width: 308px;
+    max-height: 315px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 0 0 11px 11px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__select::-webkit-scrollbar
+{
+    width: 3px;
+    height: 0;
+}
+.header__select::-webkit-scrollbar-track
+{
+    background: none;
+}
+.header__select::-webkit-scrollbar-thumb
+{
+    border-radius: 2px;
+    background: grey;
+}
+.header__select.active
+{
+    pointer-events: all;
+
+    opacity: 1;
+}
+.header__select-option
+{
+    font-size: 18px;
+    line-height: 17px;
+
+    width: 100%;
+    padding: 23px 0;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    text-align: center;
+
+    color: #262626;
+    background: white;
+}
+.header__select-option:hover
+{
+    background: #fafafa;
+}
+
+/* Оснвоное */
+/* Глобальные */
+.catalog
+{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+.catalog__item
+{
+    position: relative;
+
+    overflow: hidden;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    border-radius: 14px;
+    background: #f9f9f9;
+}
+.catalog__item-content
+{
+    position: relative;
+    z-index: 2;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 44px 49px 42px 44px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.catalog__item-title
+{
+    font-family: 'DIN Condensed';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    letter-spacing: .045em;
+
+    color: black;
+}
+.catalog__item:hover
+{
+    background: black;
+}
+.catalog__item:hover .catalog__greyFire
+{
+    opacity: 0;
+}
+.catalog__item:hover .catalog__redFire
+{
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+
+    opacity: 1;
+}
+.catalog__item:hover .catalog__item-title
+{
+    color: white;
+}
+.catalog__item:hover .catalog__img-effect
+{
+    opacity: 1;
+}
+.catalog__greyFire
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.catalog__redFire
+{
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+
+    opacity: 0;
+}
+.catalog__img
+{
+    position: relative;
+    z-index: 2;
+
+    width: 150px;
+
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+.catalog__img-wrp
+{
+    position: relative;
+}
+.catalog__img-effect
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 166px;
+    height: 122px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    opacity: 0;
+    background: #2d2d2d;
+
+    -webkit-filter: blur(25px);
+            filter: blur(25px);
+}
+
+.navigationSalt
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.navigationSalt__link,
+.navigationSalt__text
+{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+
+    color: #949494;
+}
+.navigationSalt__link
+{
+    margin-right: 5px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.navigationSalt__link:hover
+{
+    color: #cc2929;
+}
+
+/* Главная страница */
+/* Товары */
+.products
+{
+    margin-bottom: 86px;
+}
+.products:first-of-type
+{
+    margin-top: 43px;
+}
+.products__title
+{
+    margin-bottom: 43px;
+}
+.products__content
+{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+.products__product
+{
+    padding: 17px 38px 18px 28px;
+
+    border-radius: 14px;
+    background: #fff;
+}
+.products__top
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.products__arrows
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.products__leftArrow
+{
+    margin-right: 9px;
+}
+.products__arrow
+{
+    position: unset !important;
+
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 5px 14px;
+
+    border-radius: 11px;
+    background: #f9f9f9;
+    -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+            box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+}
+
+.product__img
+{
+    width: 216px;
+    height: 216px;
+    margin-bottom: 27px;
+
+    border-radius: 0;
+
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+.product__title
+{
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-bottom: 27px;
+
+    color: #3e3e3e;
+}
+.product__line
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.product__prices
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.product__oldPrice
+{
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-bottom: 2px;
+
+    color: #8a8a8a;
+
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+}
+.product__price
+{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+
+    color: #404040;
+}
+.product__button
+{
+    font-size: 14px;
+
+    padding: 9px 30px;
+
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+            box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+}
+
+/* Комплекты */
+.complects
+{
+    margin-bottom: 85px;
+}
+.complects__title
+{
+    margin-bottom: 30px;
+}
+.complects__content
+{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.complect
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.complect__img
+{
+    width: 100%;
+    height: 270px;
+    margin-bottom: 20px;
+
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+.complect__title
+{
+    font-family: 'DIN Condensed';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+
+    text-align: center;
+    letter-spacing: .045em;
+
+    color: black;
+}
+
+/* Баннеры */
+.discount
+{
+    margin-bottom: 87px;
+}
+.discount__inner
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.discount__box
+{
+    position: relative;
+
+    height: 280px;
+    padding: 99px 8px 0 14px;
+
+    border-radius: 14px;
+    background: #000;
+}
+.discount__box-inner
+{
+    position: relative;
+    z-index: 2;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    height: 100%;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.discount__box-top
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.discount__box-title
+{
+    font-family: 'GothamPro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+
+    max-width: 277px;
+
+    text-transform: uppercase;
+
+    color: white;
+}
+.discount__box-img
+{
+    width: 167px;
+    height: auto;
+
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+.discount__box-bottom
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 53px;
+}
+.discount__line
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    padding: 13px 29px 10px 0;
+
+    border-radius: 49px;
+    background: #202020;
+
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.discount__line-title,
+.discount__line-price
+{
+    font-family: 'GothamPro';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31px;
+
+    color: white;
+}
+.discount__line-title
+{
+    margin-right: 20px;
+}
+.discount__icon
+{
+    border: solid 6px #cc2929;
+    border-radius: 50%;
+    background: white;
+}
+.discount__icon
+{
+    position: absolute;
+    top: 50%;
+    left: 53px;
+
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.discount__red
+{
+    color: #cc2929;
+}
+.discount__background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.discount__out
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Популярный контент */
+.popCatalog
+{
+    margin-bottom: 92px;
+}
+.popCatalog__title
+{
+    margin-bottom: 39px;
+}
+
+/* Отзывы */
+.reviews
+{
+    margin-bottom: 90px;
+}
+.reviews__title
+{
+    margin-bottom: 40px;
+}
+.reviews__content
+{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+}
+.reviews__review
+{
+    position: relative;
+
+    height: 414px;
+
+    -webkit-box-shadow: 0 11px 17px 5px rgba(131, 131, 131, .15);
+            box-shadow: 0 11px 17px 5px rgba(131, 131, 131, .15);
+}
+.reviews__review-title
+{
+    font-family: 'GothamPro';
+    font-size: 13px;
+    line-height: 12px;
+
+    position: absolute;
+    right: 18px;
+    bottom: 14px;
+
+    padding: 14px 30px;
+
+    color: white;
+    border-radius: 5px;
+    background: #cd474a;
+}
+.reviews__img
+{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 14px;
+
+    -o-object-fit: fill;
+       object-fit: fill;
+}
+
+/* Наши магазины */
+.ourShops
+{
+    margin-bottom: 68px;
+}
+.ourShops__title
+{
+    margin-bottom: 35px;
+}
+.ourShops__content-top
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.ourShops__content-bottom
+{
+    margin-top: 48px;
+}
+.ourShops__arrow
+{
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    margin-top: -5px;
+    padding: 0 12px;
+
+    border-radius: 50%;
+    background: rgba(211, 211, 211, .6);
+}
+.ourShops__leftArrow
+{
+    margin-right: 32px;
+}
+.ourShops__rightArrow
+{
+    margin-left: 32px;
+}
+.ourShops__button
+{
+    font-family: 'GothamPro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 19px;
+
+    width: auto;
+    padding: 30px 72px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    color: black;
+    border-radius: 16px;
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+            box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+}
+.ourShops__button:not(:last-of-type)
+{
+    margin-right: 27px;
+}
+.ourShops__button.active
+{
+    cursor: default;
+
+    color: white;
+    background: #cd474a;
+}
+.ourShops__button:hover
+{
+    color: white;
+    background: #cd474a;
+}
+.ourShops__page
+{
+    display: none;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.ourShops__page-left,
+.ourShops__page-right
+{
+    width: 45%;
+}
+.ourShops__page-right
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.ourShops__box
+{
+    max-width: 455px;
+}
+.ourShops__miniTitle
+{
+    font-family: 'DIN Condensed';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+
+    margin-bottom: 20px;
+
+    color: black;
+}
+.ourShops__desc
+{
+    font-family: 'GothamPro';
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #8e8e8e;
+}
+.ourShops__red
+{
+    color: #cc2929;
+}
+
+/* Каталог */
+/* Каталог глобальный */
+.catalogPage
+{
+    margin-top: 47px;
+    margin-bottom: 154px;
+}
+.catalogPage__title
+{
+    margin-bottom: 39px;
+}
+
+/* Каталог с товарами */
+.catalogFull
+{
+    margin-top: 49px;
+    margin-bottom: 140px;
+}
+.catalogFull__nav
+{
+    margin-bottom: 26px;
+}
+.catalogFull__line
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 59px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.catalogFull__sorting
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.catalogFull__title
+{
+    margin-right: 110px;
+}
+.catalogFull__sorting-title
+{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+
+    margin-right: 20px;
+
+    color: black;
+}
+.catalogFull__button
+{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+
+    padding: 9px 21px;
+
+    cursor: pointer;
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    color: #404040;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.catalogFull__button:not(:last-of-type)
+{
+    margin-right: 7px;
+}
+.catalogFull__button:hover
+{
+    color: white;
+    background: #cc2929;
+}
+.catalogFull__button._active
+{
+    cursor: default;
+
+    color: white;
+    background: #cc2929;
+}
+
+/* Корзина */
+.basket__content
+{
+    margin-top: 46px;
+}
+.basket__title
+{
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-bottom: 29px;
+}
+.basket__product
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 19px 36px 19px 32px;
+
+    border-radius: 3px;
+    background: white;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .05);
+            box-shadow: 0 0 12px rgba(0, 0, 0, .05);
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.basket__product:not(:last-of-type)
+{
+    margin-bottom: 17px;
+}
+.basket__product:last-of-type
+{
+    margin-bottom: 50px;
+}
+.basket__product-left
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.basket__product-img
+{
+    width: 102px;
+    height: 82px;
+    margin: 0 78px 0;
+
+    background: #fbfbfb;
+}
+.basket__product-img--item
+{
+    width: 100%;
+    max-width: 102px;
+    height: 100%;
+    max-height: 82px;
+
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+.basket__product-right
+{
+    width: 100%;
+    margin-left: 104px;
+
+    border-collapse: collapse;
+
+    border: none;
+}
+.basket__product-top
+{
+    font-size: 12px;
+
+    color: #999;
+    border-bottom: .5px solid #e4e4e4;
+}
+.basket__product-top tr td
+{
+    padding-bottom: 7px;
+}
+.basket__product tr td
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-weight: 400;
+
+    width: 19%;
+    padding-top: 17px;
+}
+.basket__product-bottom
+{
+    font-weight: 600;
+}
+.basket__product-bottom input
+{
+    font-size: 24px;
+
+    width: 30%;
+
+    text-align: center;
+
+    color: #555;
+    border: none;
+    outline: none;
+}
+.basket__product-close
+{
+    cursor: pointer;
+}
+.basket__product-close rect
+{
+    -webkit-transition: .3s all;
+         -o-transition: .3s all;
+            transition: .3s all;
+}
+.basket__product-close:hover rect
+{
+    fill: #cc2929;
+}
+.basket__products-mobile
+{
+    display: none;
+}
+.basket__name
+{
+    max-width: 200px;
+}
+.basket__article
+{
+    font-weight: 300;
+}
+.basket__price
+{
+    font-size: 24px;
+}
+.basket__plus,
+.basket__minus
+{
+    cursor: pointer;
+}
+
+.buy__top
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 111px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.buy__left
+{
+    width: 100%;
+}
+.buy__placeholder
+{
+    font-size: 19px;
+    font-weight: 400;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    padding: 14px 13px;
+
+    color: #9d9d9d;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.buy__placeholder div
+{
+    font-family: 'Roboto';
+}
+.buy__placeholder span
+{
+    color: #ca4f4f;
+}
+.buy__input
+{
+    margin-bottom: 29px;
+}
+.buy__input-oneLine
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.buy__input-oneLine .buy__title
+{
+    margin: 0;
+}
+.buy__input-oneLine .buy__input-input:not(:last-of-type) input
+{
+    width: 90%;
+}
+.buy__input-oneLine .buy__input-input:last-of-type input
+{
+    width: 100%;
+}
+.buy__input-oneLine.radioLine
+{
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.buy__input-oneLine.radioLine .radioLabel
+{
+    margin-left: 74px;
+}
+.buy__input-input
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.buy__title
+{
+    font-size: 24px;
+    font-weight: 400;
+
+    margin: 49px 0 45px;
+}
+.buy__checkText
+{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 300;
+
+    margin: 24px 0 auto 20px;
+
+    color: #9d9d9d;
+}
+.buy__bottom
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 123px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.buy__price
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.buy__price:not(:last-of-type)
+{
+    margin-right: 9px;
+}
+.buy__price:last-of-type
+{
+    margin-right: 37px;
+}
+.buy__price p
+{
+    font-family: 'GothamPro';
+}
+.buy__price-text
+{
+    font-size: 20px;
+
+    margin-right: 33px;
+
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+.buy__price-price
+{
+    font-size: 32px;
+    font-weight: 500;
+}
+.buy__button
+{
+    font-family: 'DIN Condensed';
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 16px 82px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+}
+
+.select_body .select
+{
+    padding: 14px 13px;
+
+    border: none;
+    border-bottom: 1px solid #9d9d9d;
+    border-radius: 0;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.select_body .select.active
+{
+    border-color: #9d9d9d;
+}
+.select_body .select:hover
+{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.select_body .select p:first-of-type
+{
+    font-family: 'Roboto';
+    font-size: 19.1742px;
+    font-weight: 300;
+
+    color: #9d9d9d;
+}
+.select_body .select p:first-of-type span
+{
+    color: #e23f3f;
+}
+
+.select_body
+{
+    width: 100%;
+}
+
+.option
+{
+    font-family: 'Roboto';
+    font-size: 19.1742px;
+    font-weight: 300;
+
+    color: #9d9d9d;
+    border-color: #9d9d9d;
+}
+.option:hover
+{
+    background: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.select_body .option:last-of-type
+{
+    border-color: #9d9d9d;
+}
+
+/* Товар */
+/* Товар */
+.product
+{
+    margin-top: 49px;
+    margin-bottom: 68px;
+}
+.product__nav
+{
+    margin-bottom: 50px;
+}
+.product__content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.product__content-left
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.product__content-right
+{
+    width: 49%;
+}
+.product__content-left
+{
+    width: 49%;
+}
+.product__subtitle
+{
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-bottom: 27px;
+
+    color: #404040;
+}
+.product__description
+{
+    font-family: 'GothamPro';
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-bottom: 40px;
+
+    color: #878787;
+}
+.product__slider-wrp
+{
+    width: 66%;
+}
+.product__slider-nav
+{
+    width: 20%;
+    padding: 0;
+
+    border-radius: 0 !important;
+}
+.product__slider-nav--slider
+{
+    position: unset;
+}
+.product__slider-img-wrp
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.product .swiper-slide-active
+{
+    border-radius: 8px !important;
+    background: #f9f9f9 !important;
+}
+.product__pagination-item
+{
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+
+    opacity: 1 !important;
+    border-radius: 8px !important;
+    background: none !important;
+    background: #f9f9f9 !important;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.product__pagination-item:not(:last-of-type)
+{
+    margin-bottom: 17px !important;
+}
+.product__pagination-img
+{
+    height: 50.19px;
+    margin: 0 !important;
+
+    opacity: 1 !important;
+    background: none !important;
+}
+
+.productPage__title
+{
+    font-family: 'DIN Condensed';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+
+    margin-bottom: 21px;
+
+    color: black;
+}
+.productPage__line
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.productPage__prices
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    margin-right: 43px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.productPage__oldPrice
+{
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-bottom: 5px;
+
+    color: #8a8a8a;
+
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+}
+.productPage__price
+{
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #404040;
+}
+.productPage__button
+{
+    font-family: 'DIN Condensed';
+    font-size: 20px;
+
+    padding: 15px 67px;
+}
+
+/* Характеристика */
+.char
+{
+    margin-bottom: 97px;
+}
+.char__title
+{
+    margin-bottom: 42px;
+}
+.char__content
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 43px;
+}
+.char__char
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 19px 15px 22px 0;
+
+    border-bottom: .5px solid #eaeaea;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.char__char:first-of-type,
+.char__char:nth-of-type(2)
+{
+    border-top: .5px solid #eaeaea;
+}
+.char__char-title,
+.char__char-val
+{
+    font-size: 18px;
+    line-height: 22px;
+
+    color: black;
+}
+.char__char-val
+{
+    font-family: 'GothamPro';
+
+    min-width: 30px;
+
+    text-align: center;
+}
+
+/* Политика конфиденциальнсти */
+.text
+{
+    margin-top: 53px;
+    margin-bottom: 108px;
+}
+.text__title
+{
+    margin-bottom: 46px;
+}
+.text__description
+{
+    font-family: 'GothamPro';
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #878787;
+}
+
+/* Футер */
+.footer__top
+{
+    padding: 75px 0 45px;
+
+    background: #f9f9f9;
+}
+.footer__top .container
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer__top-right
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    margin-left: 111px;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.footer__column
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.footer__column-title
+{
+    font-family: 'GothamPro';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+
+    margin-bottom: 13px;
+
+    color: #636363;
+}
+.footer__column-col
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.footer__column-link
+{
+    font-family: 'Frutiger Neue LT W1G';
+    font-size: 12px;
+    line-height: 22px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    color: #636363;
+}
+.footer__column-link:hover
+{
+    color: #cc2929;
+}
+.footer__column-link:not(:last-of-type)
+{
+    margin-bottom: 8px;
+}
+.footer__bottom
+{
+    padding: 42px 0 25px;
+
+    background: #f3f3f3;
+}
+.footer__bottom-top
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.footer__bottom-col:not(:last-of-type)
+{
+    margin-right: 200px;
+}
+.footer__bottom .container
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.footer__bottom-bot
+{
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-top: 54px;
+
+    color: black;
+}
+.footer__col
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.footer__col-title
+{
+    font-family: 'GothamPro';
+    font-weight: 500;
+
+    margin-bottom: 36px;
+}
+.footer__col-line
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer__col-text
+{
+    font-size: 20px;
+
+    margin-left: 14px;
+}
+.footer__socials
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer__social:not(:last-of-type)
+{
+    margin-right: 25px;
+}
+
+/* Адаптация */
+
+/*# sourceMappingURL=style.css.map */
