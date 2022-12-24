@@ -2323,6 +2323,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .basket__product-bottom input
 {
+    font-family: 'Frutiger Neue LT W1G';
     font-size: 24px;
 
     width: 30%;
@@ -2519,12 +2520,9 @@ input[type=radio]:checked + .radio .radio__check
 {
     margin-right: 37px;
 }
-.buy__price p
-{
-    font-family: 'GothamPro';
-}
 .buy__price-text
 {
+    font-family: 'GothamPro';
     font-size: 20px;
 
     margin-right: 33px;
@@ -2534,6 +2532,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .buy__price-price
 {
+    font-family: 'Frutiger Neue LT W1G';
     font-size: 32px;
     font-weight: 500;
 }
