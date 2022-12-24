@@ -632,7 +632,7 @@ main
 
 *
 {
-    font-family: 'GothamPro';
+    font-family: 'Montserrat';
 }
 
 a
@@ -889,6 +889,10 @@ input[type=radio]:checked + .radio .radio__check
     font-weight: 700;
     line-height: 17px;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
     cursor: pointer;
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -898,6 +902,13 @@ input[type=radio]:checked + .radio .radio__check
     color: white;
     border-radius: 11px;
     background: #cc2929;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .button:hover
 {
@@ -950,6 +961,10 @@ input[type=radio]:checked + .radio .radio__check
     line-height: 15px;
 
     color: #828282;
+}
+.input:hover
+{
+    cursor: text;
 }
 
 /* Анимации */
@@ -1055,12 +1070,18 @@ input[type=radio]:checked + .radio .radio__check
 {
     margin-left: 3px;
 }
+.header__top-text
+{
+    font-family: 'Montserrat';
+}
 .header__top-text.red
 {
     color: #cc2929;
 }
 .header__top-select
 {
+    font-family: 'Montserrat';
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1643,6 +1664,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .product__title
 {
+    font-family: 'Montserrat';
     font-size: 14px;
     line-height: 16px;
 
@@ -1676,6 +1698,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .product__oldPrice
 {
+    font-family: 'Montserrat';
     font-size: 12px;
     line-height: 14px;
 
@@ -1688,6 +1711,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .product__price
 {
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 600;
     line-height: 18px;
@@ -2195,15 +2219,16 @@ input[type=radio]:checked + .radio .radio__check
 }
 
 /* Корзина */
+.basket
+{
+    margin-top: 47px;
+}
 .basket__content
 {
     margin-top: 46px;
 }
 .basket__title
 {
-    font-size: 24px;
-    font-weight: 500;
-
     margin-bottom: 29px;
 }
 .basket__product
@@ -2384,7 +2409,11 @@ input[type=radio]:checked + .radio .radio__check
 }
 .buy__placeholder div
 {
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
+}
+.buy__placeholder:hover
+{
+    cursor: text;
 }
 .buy__placeholder span
 {
@@ -2449,11 +2478,11 @@ input[type=radio]:checked + .radio .radio__check
 }
 .buy__checkText
 {
-    font-family: 'Roboto';
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 300;
 
-    margin: 24px 0 auto 20px;
+    margin: 28px 0 auto 20px;
 
     color: #9d9d9d;
 }
@@ -2608,10 +2637,6 @@ input[type=radio]:checked + .radio .radio__check
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 .product__content-right
 {
@@ -2623,6 +2648,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .product__subtitle
 {
+    font-family: 'Montserrat';
     font-size: 12px;
     line-height: 14px;
 
@@ -2643,10 +2669,13 @@ input[type=radio]:checked + .radio .radio__check
 .product__slider-wrp
 {
     width: 66%;
+    margin: 0;
+    margin-left: 21px;
 }
 .product__slider-nav
 {
     width: 20%;
+    margin: 0;
     padding: 0;
 
     border-radius: 0 !important;
@@ -2660,6 +2689,8 @@ input[type=radio]:checked + .radio .radio__check
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    height: 329px;
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -2744,6 +2775,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .productPage__oldPrice
 {
+    font-family: 'Montserrat';
     font-size: 14px;
     line-height: 16px;
 
@@ -2756,7 +2788,9 @@ input[type=radio]:checked + .radio .radio__check
 }
 .productPage__price
 {
+    font-family: 'Montserrat';
     font-size: 32px;
+    font-weight: 500;
     line-height: 37px;
 
     color: #404040;
@@ -2810,6 +2844,7 @@ input[type=radio]:checked + .radio .radio__check
 .char__char-title,
 .char__char-val
 {
+    font-family: 'Montserrat';
     font-size: 18px;
     line-height: 22px;
 
@@ -2999,6 +3034,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .footer__col-text
 {
+    font-family: 'Montserrat';
     font-size: 20px;
 
     margin-left: 14px;
