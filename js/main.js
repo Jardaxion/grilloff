@@ -31,17 +31,12 @@ $(document).ready(() => {
 
     let navSlider = new Swiper('.product__slider-nav', {
         loop: false,
-        direction: 'vertical',
         slidesPerView: 3,
-    })
-
-    let newsSlider = new Swiper('.products__content-wrp', {
-        loop: false,
-        slidesPerView: 4,
-        navigation: {
-            nextEl: '.products__rightArrow',
-            prevEl: '.products__leftArrow',
-        },
+        breakpoints: {
+            961: {
+                direction: 'vertical'
+            }
+        }
     })
 
     enterSelPage();
@@ -88,6 +83,58 @@ $(document).ready(() => {
                 })
             }
         }
+    })
+
+    //Открытие поиска на мобилке
+    $('.js-open-search').on('click', function(){
+        $('.headerMobile__search').toggleClass('active');
+        $('.header__logo').toggleClass('disactive');
+    })
+
+    //Мобильное меню
+    $('.header__menuBtn').on('click', function(e){
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $('.header__menu').slideToggle();
+        $('body').toggleClass('noScroll');
+    })
+
+    //footer
+    if($(window).width() > 960){
+        let newsSlider = new Swiper('.products__content-wrp', {
+            loop: false,
+            slidesPerView: 4,
+            navigation: {
+                nextEl: '.products__rightArrow',
+                prevEl: '.products__leftArrow',
+            },
+        })
+    }
+    if($(window).width() <= 960){
+        $('.footer__box').on('click', function(){
+            $(this).children('.footer__mobileToggle').toggleClass('active')
+            $(this).next().slideToggle('medium', function() {
+                if ($(this).is(':visible'))
+                    $(this).css('display','flex');
+            })
+        })
+
+        let reviews = new Swiper('.reviews__content-wrapper', {
+            loop: false,
+            navigation: {
+                nextEl: '.reviews__rightArrow',
+                prevEl: '.reviews__leftArrow',
+            },
+        })
+    }
+
+    $('.change__select').on('click', function(){
+        $('.change__select.selected').removeClass('selected');
+        $('.change__box.active').removeClass('active');
+
+        $(this).addClass('selected');
+        $('.change__box[data-sel="' + $(this).data('sel') + '"]').addClass('active');
     })
 })
 

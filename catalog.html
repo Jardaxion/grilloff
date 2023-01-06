@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__inner">
+      <div class="header__inner desktop">
         <div class="header__top">
           <div class="header__top-left">
             <p class="header__top-text">Город:</p><a class="header__top-select js-select-city" href="#"><span class="header__top-text red">Орёл</span>
@@ -27,10 +27,10 @@
           </div>
           <div class="header__top-center">
             <ul class="header__top-nav">
-              <li class="header__top-item"><a class="header__top-link" href="about.html">О магазине</a></li>
-              <li class="header__top-item"><a class="header__top-link" href="deliv.html">Оплата и доставка</a></li>
-              <li class="header__top-item"><a class="header__top-link" href="sertif.html">Сертификаты</a></li>
-              <li class="header__top-item"><a class="header__top-link" href="contact.html">Контакты</a></li>
+              <li class="header__top-item"><a class="header__top-link" href="index.html#about">Отзывы</a></li>
+              <li class="header__top-item"><a class="header__top-link" href="index.html#deliv">Оплата и доставка</a></li>
+              <li class="header__top-item"><a class="header__top-link" href="index.html#sertif">Сертификаты</a></li>
+              <li class="header__top-item"><a class="header__top-link" href="index.html#contact">Контакты</a></li>
             </ul>
           </div>
           <div class="header__top-right"><a class="header__top-line" href="tel:+79092255763">
@@ -64,6 +64,51 @@
             <li class="header__bottom-item"><a class="header__bottom-link" href="product.html">Выгодно</a></li>
           </ul>
         </div>
+      </div>
+      <div class="header__inner mobile">
+        <div class="header__left"><img class="header__logo" src="img/logoMobile.svg" alt=""></div>
+        <div class="header__right">
+          <div class="headerMobile__search">
+            <input class="headerMobile__search-input" type="text" placeholder="Поиск товаров">
+            <svg class="js-open-search" width="19" height="23" viewbox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8.27415" cy="8.27415" r="7.67415" stroke="black" stroke-width="1.2"></circle>
+              <path d="M13.0506 14.3735L18.2784 21.5186C18.4907 21.8087 18.4276 22.2159 18.1375 22.4282C17.8474 22.6405 17.4401 22.5773 17.2278 22.2872L12 15.1422L13.0506 14.3735Z" fill="black"></path>
+            </svg>
+          </div><a class="header__middle-right" href="basket.html">
+            <div class="header__middle-cart"><img class="header__middle-cart--img" src="img/cart.svg" alt="">
+              <p class="header__middle-cart--text">4</p>
+            </div></a>
+          <div class="header__menuBtn"><span> </span><span> </span><span></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu">
+      <div class="header__menu-inner">
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a class="header__menu-link" href="catalog">Каталог</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="about">Отзывы</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="deliv">Оплата и доставка</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="sertif">Сертификаты</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="contact">Контакты</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="stock">Акции</a></li>
+        </ul>
+        <div class="header__menu-box">
+          <div class="header__top-left">
+            <p class="header__top-text">Город:</p><a class="header__top-select js-select-city" href="#"><span class="header__top-text red">Орёл</span>
+              <div class="header__top-arrow">
+                <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div></a>
+            <div class="header__select js-select"><a class="header__select-option js-select-option" href="#">Москва</a><a class="header__select-option js-select-option" href="#">Ворожен</a><a class="header__select-option js-select-option" href="#">Кемерово</a><a class="header__select-option js-select-option" href="#">Санкт-Петебург</a><a class="header__select-option js-select-option" href="#">Новосибирск</a><a class="header__select-option js-select-option" href="#">Орел</a>
+            </div>
+          </div><a class="header__top-line" href="tel:+79092255763">
+            <svg width="16" height="18" viewbox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.19593 12.0252C7.2774 16.262 11.1492 18.6974 12.8439 17.4648L14.8896 15.9769C15.3133 15.6688 15.4069 15.0755 15.0988 14.6519L13.239 12.0948C12.9308 11.6711 12.3376 11.5774 11.9139 11.8856L10.3796 13.0015C7.86904 11.2877 6.02911 8.75787 5.17215 5.84151L6.70642 4.72561C7.13009 4.41747 7.22375 3.82419 6.91562 3.40052L5.05581 0.843416C4.74768 0.419748 4.1544 0.326087 3.73073 0.634224L1.68508 2.12205C-0.00971884 3.35458 1.11446 7.78834 4.19593 12.0252Z" fill="#CC2929"></path>
+            </svg>
+            <p class="header__top-line--text">+7 909 225 57 63</p></a>
+        </div>
+        <div class="whatsapp"><a class="whatsapp__inner" href="#"><img class="whatsapp__inner-img" src="img/whatsapp.svg" alt=""></a></div>
       </div>
     </div>
   </header>
@@ -288,22 +333,46 @@
         <div class="container"><img class="footer__logo" src="img/logo.svg" alt="">
           <div class="footer__top-right">
             <div class="footer__column">
-              <p class="footer__column-title">Печи и чугун</p>
+              <div class="footer__box">
+                <p class="footer__column-title">Печи и чугун</p>
+                <div class="footer__mobileToggle">
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
               <div class="footer__column-col"><a class="footer__column-link" href="#">Чугунные казаны</a><a class="footer__column-link" href="#">Печи для казана</a><a class="footer__column-link" href="#">Отопительные печи</a><a class="footer__column-link" href="#">Отопительные печи под казан</a>
               </div>
             </div>
             <div class="footer__column">
-              <p class="footer__column-title">Комплекты</p>
+              <div class="footer__box">
+                <p class="footer__column-title">Комплекты</p>
+                <div class="footer__mobileToggle">
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
               <div class="footer__column-col"><a class="footer__column-link" href="#">Казан + печь</a><a class="footer__column-link" href="#">Мангал + шампура</a><a class="footer__column-link" href="#">Мангал + казан + шампура</a><a class="footer__column-link" href="#">3 вида мёда</a><a class="footer__column-link" href="#">Афганский казан + специи</a>
               </div>
             </div>
             <div class="footer__column">
-              <p class="footer__column-title">Акссесуары</p>
+              <div class="footer__box">
+                <p class="footer__column-title">Акссесуары</p>
+                <div class="footer__mobileToggle">
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
               <div class="footer__column-col"><a class="footer__column-link" href="#">Шампура</a><a class="footer__column-link" href="#">Шумовки</a><a class="footer__column-link" href="#">Половники</a><a class="footer__column-link" href="#">Подставки, кашпо</a><a class="footer__column-link" href="#">Свечи</a>
               </div>
             </div>
             <div class="footer__column">
-              <p class="footer__column-title">Полезное</p>
+              <div class="footer__box">
+                <p class="footer__column-title">Полезное</p>
+                <div class="footer__mobileToggle">
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
               <div class="footer__column-col"><a class="footer__column-link" href="#">Новости</a><a class="footer__column-link" href="#">О Нас</a><a class="footer__column-link" href="#">Контакты</a><a class="footer__column-link" href="#">Отзывы</a><a class="footer__column-link" href="#">Политика конфиденциальности</a>
               </div>
             </div>
@@ -353,6 +422,7 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
   <script src="js/customSelect.js"></script>
   <script src="js/main.min.js"></script>
 </body>
