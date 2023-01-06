@@ -3586,10 +3586,23 @@ input[type=radio]:checked + .radio .radio__check
     }
     .discount__inner
     {
-        display: grid;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+            flex-direction: column;
 
-        grid-template-columns: repeat(1, 1fr);
-        gap: 24px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+    .discount__box
+    {
+        height: auto;
+        min-height: 280px;
+    }
+    .discount__box:not(:last-of-type)
+    {
+        margin-bottom: 24px;
     }
     .catalog
     {
@@ -3912,6 +3925,7 @@ input[type=radio]:checked + .radio .radio__check
     .product__slider-wrp
     {
         width: 100%;
+        margin-left: 0;
     }
     .product__slider-nav
     {
