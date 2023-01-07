@@ -1428,7 +1428,7 @@ input[type=radio]:checked + .radio .radio__check
         flex-direction: column;
 
     width: 70px;
-    margin-left: 44px;
+    margin-left: 28px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -1462,6 +1462,14 @@ input[type=radio]:checked + .radio .radio__check
     -webkit-transform: rotate(-45deg) translate(1px, 0);
         -ms-transform: rotate(-45deg) translate(1px, 0);
             transform: rotate(-45deg) translate(1px, 0);
+}
+.header__menuBtn.search
+{
+    width: 30px;
+}
+.header__menuBtn.search .header__menuBtn.active
+{
+    width: 20px;
 }
 .header__menuBtn span
 {
@@ -1561,7 +1569,7 @@ input[type=radio]:checked + .radio .radio__check
 
     width: 100%;
     max-width: 263px;
-    margin-right: 60px;
+    margin-right: 24px;
 
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1576,11 +1584,9 @@ input[type=radio]:checked + .radio .radio__check
 }
 .headerMobile__search-input
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-
     display: none;
+
+    height: 36px;
 }
 
 .js-open-search
@@ -3603,6 +3609,12 @@ input[type=radio]:checked + .radio .radio__check
 
         padding: 7px 15px;
     }
+    .product__line
+    {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
     .buttons
     {
         min-width: auto;
@@ -3834,6 +3846,7 @@ input[type=radio]:checked + .radio .radio__check
     }
     .buttons__row
     {
+        width: 90%;
         height: 30px;
     }
     .number
@@ -4077,6 +4090,10 @@ input[type=radio]:checked + .radio .radio__check
     {
         color: #cc2929;
     }
+    .product__prices
+    {
+        width: 60%;
+    }
     .char
     {
         display: none;
@@ -4097,6 +4114,10 @@ input[type=radio]:checked + .radio .radio__check
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+    }
+    .productPage__button
+    {
+        width: 49%;
     }
     .char__char:first-of-type,
     .char__char:nth-of-type(2)

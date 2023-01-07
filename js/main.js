@@ -87,6 +87,7 @@ $(document).ready(() => {
 
     //Открытие поиска на мобилке
     $('.js-open-search').on('click', function(){
+        $('.header__menuBtn').toggleClass('search');
         $('.headerMobile__search').toggleClass('active');
         $('.header__logo').toggleClass('disactive');
     })
