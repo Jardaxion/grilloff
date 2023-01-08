@@ -1,3 +1,13 @@
+if($(window).width() > 960){
+    let newsSlider = new Swiper('.products__content-wrp', {
+        loop: false,
+        slidesPerView: 4,
+        navigation: {
+            nextEl: '.products__rightArrow',
+            prevEl: '.products__leftArrow',
+        },
+    })
+}
 $(document).ready(() => {
     let ourShop = new Swiper('.ourShops__buttons-wrp', {
         loop: false,
@@ -102,16 +112,6 @@ $(document).ready(() => {
     })
 
     //footer
-    if($(window).width() > 960){
-        let newsSlider = new Swiper('.products__content-wrp', {
-            loop: false,
-            slidesPerView: 4,
-            navigation: {
-                nextEl: '.products__rightArrow',
-                prevEl: '.products__leftArrow',
-            },
-        })
-    }
     if($(window).width() <= 960){
         $('.footer__box').on('click', function(){
             $(this).children('.footer__mobileToggle').toggleClass('active')

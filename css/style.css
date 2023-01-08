@@ -708,7 +708,7 @@ input
     line-height: 22px;
 
     width: 100%;
-    padding: 14px 13px;
+    padding: 0 13px 14px 13px;
 
     color: #9d9d9d;
     border: none;
@@ -1124,6 +1124,16 @@ input[type=radio]:checked + .radio .radio__check
 }
 .header__top-link
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header__top-link
+{
     font-size: 12px;
     line-height: 14px;
 
@@ -1353,7 +1363,7 @@ input[type=radio]:checked + .radio .radio__check
         flex-direction: column;
 
     width: 308px;
-    max-height: 315px;
+    max-height: 189px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -1764,6 +1774,7 @@ input[type=radio]:checked + .radio .radio__check
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
             transition: .3s ease all;
+    word-spacing: 3px;
 }
 .navigationSalt__link:hover
 {
@@ -1798,7 +1809,7 @@ input[type=radio]:checked + .radio .radio__check
     display: flex;
         flex-direction: column;
 
-    padding: 17px 38px 18px 28px;
+    padding: 17px 28px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -1834,6 +1845,10 @@ input[type=radio]:checked + .radio .radio__check
     display: -ms-flexbox;
     display: flex;
 
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1855,14 +1870,22 @@ input[type=radio]:checked + .radio .radio__check
     -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
             box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
 }
+.products__arrow svg path
+{
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.products__arrow:hover svg path
+{
+    stroke: black;
+}
 
 .product__img
 {
-    width: 216px;
+    width: 100%;
     height: 216px;
     margin-bottom: 27px;
-
-    border-radius: 0;
 
     -o-object-fit: contain;
        object-fit: contain;
@@ -1929,12 +1952,23 @@ input[type=radio]:checked + .radio .radio__check
 {
     font-size: 10px;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
     min-width: 120px;
     padding: 9px 30px;
 
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
             box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .product__plus,
 .product__minus
@@ -1944,6 +1978,7 @@ input[type=radio]:checked + .radio .radio__check
     position: absolute;
     top: 0;
 
+    height: 98%;
     padding: 9px 15px;
 
     color: white;
@@ -1989,13 +2024,17 @@ input[type=radio]:checked + .radio .radio__check
     align-items: center;
 }
 
+.buttons__row
+{
+    display: none;
+
+    width: 120px;
+    height: 38px;
+}
+
 .buttons
 {
     min-width: 120px;
-}
-.buttons .buttons__row
-{
-    display: none;
 }
 .buttons.active .buttons__row
 {
@@ -2038,6 +2077,8 @@ input[type=radio]:checked + .radio .radio__check
 
 .complect
 {
+    position: relative;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2052,6 +2093,9 @@ input[type=radio]:checked + .radio .radio__check
 }
 .complect__img
 {
+    position: relative;
+    z-index: 2;
+
     width: 100%;
     height: 270px;
     margin-bottom: 20px;
@@ -2071,6 +2115,30 @@ input[type=radio]:checked + .radio .radio__check
 
     color: black;
 }
+.complect__background
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 80%;
+    height: 80%;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    opacity: 0;
+    border-radius: 50%;
+    background: #f9f9f9;
+}
+.complect:hover .complect__background
+{
+    opacity: 1;
+}
 
 /* Баннеры */
 .discount
@@ -2083,16 +2151,6 @@ input[type=radio]:checked + .radio .radio__check
 
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-}
-.discount__box
-{
-    position: relative;
-
-    height: 280px;
-    padding: 99px 8px 0 14px;
-
-    border-radius: 14px;
-    background: #000;
 }
 .discount__box-inner
 {
@@ -2703,7 +2761,7 @@ input[type=radio]:checked + .radio .radio__check
     font-family: 'Frutiger Neue LT W1G';
     font-size: 24px;
 
-    width: 30%;
+    width: 50%;
 
     text-align: center;
 
@@ -2746,6 +2804,10 @@ input[type=radio]:checked + .radio .radio__check
 {
     cursor: pointer;
 }
+.basket__buttons
+{
+    padding-top: 19px;
+}
 
 .buy__top
 {
@@ -2777,7 +2839,7 @@ input[type=radio]:checked + .radio .radio__check
     display: flex;
 
     width: 100%;
-    padding: 14px 13px;
+    padding: 0 13px 14px 13px;
 
     color: #9d9d9d;
 
@@ -2825,6 +2887,8 @@ input[type=radio]:checked + .radio .radio__check
 }
 .buy__input-oneLine.radioLine
 {
+    margin-top: 20px;
+
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -2903,9 +2967,6 @@ input[type=radio]:checked + .radio .radio__check
     font-size: 20px;
 
     margin-right: 33px;
-
-    -ms-flex-item-align: end;
-    align-self: flex-end;
 }
 .buy__price-price
 {
@@ -3036,6 +3097,7 @@ input[type=radio]:checked + .radio .radio__check
 {
     font-family: 'GothamPro';
     font-size: 14px;
+    font-weight: 400;
     line-height: 20px;
 
     margin-bottom: 40px;
@@ -3472,7 +3534,7 @@ input[type=radio]:checked + .radio .radio__check
     {
         display: none;
     }
-    .discount__line-title.mobile
+    .discount__box.mobile
     {
         display: none;
     }
@@ -3568,7 +3630,7 @@ input[type=radio]:checked + .radio .radio__check
         display: flex;
 
         height: 98%;
-        padding: 0 12px;
+        padding: 0 10px;
 
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3583,7 +3645,10 @@ input[type=radio]:checked + .radio .radio__check
     .product__img
     {
         width: 100%;
-        height: auto;
+        height: 81px;
+
+        -o-object-fit: scale-down;
+           object-fit: scale-down;
     }
     .product__button
     {
@@ -3627,6 +3692,10 @@ input[type=radio]:checked + .radio .radio__check
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
+    .complect__background
+    {
+        width: 40%;
+    }
     .discount__inner
     {
         display: -webkit-box;
@@ -3638,42 +3707,17 @@ input[type=radio]:checked + .radio .radio__check
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
     }
+    .discount__img
+    {
+        width: 100%;
+    }
     .discount__box
     {
-        height: auto;
-        min-height: 280px;
-        padding: 62px 8px 0 14px;
+        display: none;
     }
-    .discount__box.center img
+    .discount__box.mobile
     {
-        -ms-flex-item-align: center;
-        align-self: center;
-    }
-    .discount__box-top
-    {
-            flex-direction: column;
-
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
-    }
-    .discount__box-title
-    {
-        font-size: 20px;
-        line-height: 24px;
-
-        max-width: 320px;
-    }
-    .discount__box:not(:last-of-type)
-    {
-        margin-bottom: 24px;
-    }
-    .discount__box-bottom
-    {
-        padding: 0;
+        display: block;
     }
     .discount__line
     {
@@ -3846,7 +3890,7 @@ input[type=radio]:checked + .radio .radio__check
     }
     .buttons__row
     {
-        width: 90%;
+        width: 100%;
         height: 30px;
     }
     .number
