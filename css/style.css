@@ -1813,6 +1813,13 @@ input[type=radio]:checked + .radio .radio__check
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
 }
+.products__content-slider
+{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
 .products__product
 {
     display: -webkit-box;
