@@ -892,6 +892,7 @@ input[type=radio]:checked + .radio .radio__check
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
+    line-height: normal;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1121,6 +1122,16 @@ input[type=radio]:checked + .radio .radio__check
 .header__top-nav *:not(:last-child)
 {
     margin-right: 34px;
+}
+.header__top-item
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .header__top-link
 {
@@ -1769,7 +1780,7 @@ input[type=radio]:checked + .radio .radio__check
 }
 .navigationSalt__link
 {
-    margin-right: 5px;
+    margin-right: 6px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -1957,7 +1968,7 @@ input[type=radio]:checked + .radio .radio__check
     display: flex;
 
     min-width: 120px;
-    padding: 9px 30px;
+    padding: 13px 30px;
 
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
@@ -3104,7 +3115,7 @@ input[type=radio]:checked + .radio .radio__check
 {
     font-family: 'GothamPro';
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 20px;
 
     margin-bottom: 40px;
