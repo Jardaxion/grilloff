@@ -1305,7 +1305,7 @@ input[type=radio]:checked + .radio .radio__check
     position: absolute;
     right: 0;
 
-    padding: 11px 65px;
+    padding: 11px 65px 8px;
 
     border-radius: 8px;
 }
@@ -1327,7 +1327,7 @@ input[type=radio]:checked + .radio .radio__check
     font-weight: 700;
     line-height: 24px;
 
-    padding: 13px 67px;
+    padding: 13px 67px 10px;
 }
 .header__bottom-list
 {
@@ -1968,14 +1968,15 @@ input[type=radio]:checked + .radio .radio__check
 }
 .product__button
 {
-    font-size: 10px;
+    font-size: 16px;
 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
     min-width: 120px;
-    padding: 13px 30px;
+    height: 36px;
+    padding: 13px 30px 11px;
 
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
@@ -2024,7 +2025,7 @@ input[type=radio]:checked + .radio .radio__check
     display: -ms-flexbox;
     display: flex;
 
-    padding: 10px 45% 10px 45%;
+    padding: 10px 45% 8px 45%;
 
     letter-spacing: .045em;
 
@@ -2047,7 +2048,7 @@ input[type=radio]:checked + .radio .radio__check
     display: none;
 
     width: 120px;
-    height: 38px;
+    height: 36px;
 }
 
 .buttons
@@ -2351,7 +2352,7 @@ input[type=radio]:checked + .radio .radio__check
     right: 18px;
     bottom: 14px;
 
-    padding: 14px 30px;
+    padding: 14px 30px 11px;
 
     color: white;
     border-radius: 5px;
@@ -2428,7 +2429,7 @@ input[type=radio]:checked + .radio .radio__check
     line-height: 19px;
 
     width: auto;
-    padding: 30px 72px;
+    padding: 30px 72px 27px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -2752,7 +2753,7 @@ input[type=radio]:checked + .radio .radio__check
 .basket__product-right
 {
     width: 100%;
-    margin-left: 104px;
+    margin-left: 36px;
 
     border-collapse: collapse;
 
@@ -2774,7 +2775,7 @@ input[type=radio]:checked + .radio .radio__check
     font-family: 'Frutiger Neue LT W1G';
     font-weight: 400;
 
-    width: 19%;
+    width: 5%;
     padding-top: 17px;
 }
 .basket__product-bottom
@@ -2887,6 +2888,14 @@ input[type=radio]:checked + .radio .radio__check
 .buy__input
 {
     margin-bottom: 29px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.buy__input:focus
+{
+    border-color: #ca4f4f;
 }
 .buy__input-oneLine
 {
@@ -2949,7 +2958,7 @@ input[type=radio]:checked + .radio .radio__check
     font-size: 20px;
     font-weight: 300;
 
-    margin: 28px 0 auto 20px;
+    margin: 23px 0 auto 20px;
 
     color: #9d9d9d;
 }
@@ -3005,7 +3014,7 @@ input[type=radio]:checked + .radio .radio__check
     font-size: 18px;
     font-weight: 500;
 
-    padding: 16px 82px;
+    padding: 16px 82px 13px;
 
     cursor: pointer;
 
@@ -3267,7 +3276,7 @@ input[type=radio]:checked + .radio .radio__check
     font-family: 'DIN Condensed';
     font-size: 20px;
 
-    padding: 15px 67px;
+    padding: 15px 67px 12px;
 }
 
 /* Характеристика */
@@ -3678,6 +3687,7 @@ input[type=radio]:checked + .radio .radio__check
     .product__button
     {
         min-width: auto;
+        height: auto;
     }
     .product__title
     {
